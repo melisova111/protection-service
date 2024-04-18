@@ -1,0 +1,37 @@
+.limit{
+//  padding: 70px 0 48px; 
+.container-custom {
+    position: relative;  
+}
+ &-title{
+     max-width: 786px;
+     margin-bottom: 22px;
+ }
+ &-block{
+     &__img{
+        //  max-width: 100%;
+         width: max-content;
+         padding: 45px 48px 0 0;
+         margin-bottom: 20px;
+         background: white;
+         &_item{
+             max-width: 233px;
+         }
+     }
+ }
+ &-padding{
+     padding-left: 75px;
+ }
+ &-img{
+     transform: translate(40%, -85px);
+     max-width: 796px;
+     padding: 40px;
+     background: white;
+     position: absolute;
+     top: 0;
+     right: 0;
+     img{
+         width: 100%;
+     }
+ }
+}

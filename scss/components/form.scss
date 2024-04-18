@@ -1,0 +1,98 @@
+.form{
+   .container-custom{
+      // padding-top: 100px;
+   }
+   &-title{
+      margin-bottom: 21px;
+      max-width: 320px;
+      position: relative;
+      &::after{
+         content: url('../images/form-arrow.svg');
+         position: absolute;
+         right: -25px;
+         top: 0;
+         transform: translate(100%, -25%);
+      }
+   }
+   &-subtitle{
+      color: $gray;
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 48px;
+   }
+   &-block{
+      border: 10px solid $purple;
+      padding: 78px 78px 70px;
+      display: flex;
+   }
+   &-content{
+      width: 50%;
+   }
+   &-card{
+      display: flex;
+      &__img{
+         margin-right: 34px;
+         position: relative;
+         &::after{
+            content: url('../images/plus.svg');
+            position: absolute;
+            top: 50%;
+            right: 0%;
+            transform: translate(50%, -50%);
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: white;
+         }
+      }
+      &__items{
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+      }
+      &__free{
+         border: 4px solid $green;
+         padding: 5px 16px;
+         font-weight: bold;
+         letter-spacing: 2%;
+         text-transform: uppercase;
+         color: $green;
+         max-width: max-content;
+      }
+      &__text{
+         
+      }
+   }
+   &-send{
+      width: 50%;
+      display: flex;
+      justify-content: end;
+      padding-top: 15px;
+      &__items{
+         display: flex;
+         flex-wrap: wrap;
+         max-width: 360px;
+
+      }
+      &__item{
+         border: none;
+         width: 100%;
+         height: 60px;
+         background: $blue;
+         &:not(:last-child){
+            padding-left: 20px;
+            margin-bottom: 10px;
+         }
+         &::placeholder{
+            color: $blue-2;
+         }
+      }
+      &__submit{
+         margin-top: 10px;
+         background: $green;
+      }
+   }
+}

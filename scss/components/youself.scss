@@ -1,0 +1,48 @@
+.yourself{
+    display: flex;
+    .row   {
+        position: relative;
+    }
+    &-content{
+        display: flex;
+        padding: 63px 181px 46px 86px;
+        background: $blue;
+        
+        &__title{
+
+            margin-bottom: 40px;
+        }
+        &__text{
+            line-height: 32px;
+        }
+        &__img{
+            margin-right: 38px;
+        }
+    }
+    &-block{
+        // border: 20px solid $purple;
+
+        position: absolute;
+        top: 50%;
+        right: -83px;
+        transform: translate(0%, -50%);
+        // max-height: 300px;
+        max-width: 540px;
+        &::before{
+            content: url('../images/yourself-line.svg');
+            position: absolute;
+            top: 50%;
+            right: 102px;
+            transform: translate(1px, -49%);
+        }
+        &-bottom{
+            right: -65px;
+            &::before{
+                right: 78px;
+            }
+        }
+        img{
+            max-width: 100%;
+        }
+    }
+}

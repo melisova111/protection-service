@@ -1,0 +1,114 @@
+.answers {
+
+    &-title {
+        margin-bottom: 35px;
+    }
+
+    &-container {
+        &__title {
+            padding-left: 110px;
+        }
+    }
+
+    &-accordion {
+        width: 1150px;
+        margin: 0 auto;
+        transition: 1s;
+    }
+
+    &-blue {
+        padding: 100px 0;
+        background: $blue;
+    }
+
+    &-card {
+        // padding-left: 20px;
+        padding-right: 20px;
+        background: transparent;
+        border: none;
+        outline: none;
+
+        &:last-child {
+            padding-bottom: 2px;
+        }
+
+        .btn-link.focus,
+        .btn-link:focus,
+        .btn-link.hover,
+        .btn-link:hover {
+            text-decoration: none;
+        }
+
+        .collapse {
+            // margin-bottom: 17px;
+        }
+
+        .btn.focus,
+        .btn:focus {
+            outline: 0;
+            box-shadow: 0 0 0 0 rgba(0, 123, 255, .0);
+        }
+
+        &__header {
+            position: relative;
+            border: 1px solid white;
+            background-color: rgba(0, 0, 0, .0);
+
+            &::after {
+                content: '';
+                height: 100%;
+                background: $green-light;
+                right: 0;
+                top: 0;
+                width: 18px;
+                position: absolute;
+                transform: translateX(100%);
+            }
+
+            .btn-link {
+                font-size: 20px;
+                font-weight: bold;
+                color: $green-light;
+            }
+
+            .collapsed {
+                color: $purple;
+            }
+        }
+
+        &__body {
+            padding-left: 20px;
+            border: 10px solid white;
+            background-color: $blue;
+        }
+
+        &__list {
+            &_item {
+                margin-left: 20px;
+                padding-left: 2px;
+            }
+        }
+    }
+
+    .red {
+        background: red;
+    }
+
+    .btn-block {
+        position: relative;
+    }
+
+    .btn-block::after {
+        content: "\f107";
+        color: #333;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        position: absolute;
+        font-family: "FontAwesome"
+    }
+
+    .btn-block[aria-expanded="true"]::after {
+        content: "\f106";
+    }
+}

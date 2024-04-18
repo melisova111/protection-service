@@ -1,0 +1,37 @@
+.scheme{
+    .col-xl-4{
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3){
+            margin-bottom: 165px;
+        }
+    }
+    &-title{
+        width: 100%;
+        margin-bottom: 125px;
+    }
+    &-block{
+        &__title{
+            position: relative;
+            &::after{
+                content: url('../images/scheme-arrow.svg');
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translate(-25%, -65%);
+            }
+        }
+        &__subtitle{
+            font-size: 40px;
+            line-height: 58px;
+            color: $purple;
+        }
+        &__text{
+            margin-bottom: 40px;
+            &_link{
+                color: $purple;
+                font-weight: bold;
+            }
+        }
+    }
+}

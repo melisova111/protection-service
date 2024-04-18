@@ -1,0 +1,102 @@
+.footer{
+    margin-bottom: 21px;
+    .container-custom{
+        padding: 40px 60px 5px 80px;
+        background: $blue;
+    }
+    &-title{
+        font-weight: bold;
+        margin-bottom: 14px;
+    }
+    &-main{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 22px;
+        &__logo{
+            max-width: 85px;
+            margin-right: 17px;
+            img{
+                max-width: 100%;
+            }
+        }
+        &__one{
+            display: flex;
+            max-width: 400px;
+            &_text{
+                padding-top: 14px;
+            }
+        }
+        &__two{
+            padding-top: 14px;
+            max-width: 300px;
+            display: flex;
+            flex-direction: column;
+            &_phone{
+                width: 100%;
+                font-size: 36px;
+                line-height: 58px;
+                font-weight: bold;
+                margin-bottom: 6px;
+            }
+        }
+        &__question{
+            margin-bottom: 24px;
+            position: relative;
+            &::after{
+                content: url('../images/footer-arrow.svg');
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translate(50%, 0%);
+            }
+        }
+        &__copyright{
+            font-size: 14px;
+            line-height: 24px;
+            a{
+                text-decoration: underline;
+            }
+        }
+
+    }
+    &-address{
+        display: flex;
+        flex-direction: column;
+        max-width: 320px;
+        &__item{
+            margin-bottom: 16px;
+        }
+        &__link{
+            color: $purple;
+            text-decoration: underline;
+            margin-bottom: 30px;
+        }
+        &__map{
+            height: 127px;
+        }
+    }
+    &-list{
+        display: flex;
+        margin-bottom: 15px;
+        &__item{
+            border-radius: 50%;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            box-shadow: 0px 10px 10px rgba(40, 141, 47, 0.5);
+            margin-right: 10px;
+            img{
+                width: 30px;
+            }
+        }
+    }
+    &-iframe{
+        width: 470px;
+        height: 217px;
+    }
+    
+}

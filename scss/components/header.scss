@@ -1,0 +1,233 @@
+.header {
+    &-nav {
+        padding: 13px 0 22px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        &__logo {
+            width: 250px;
+            display: flex;
+            align-items: center;
+
+            &_link {
+                display: flex;
+            }
+        }
+
+        &__img {
+            max-width: 75px;
+            margin-right: 14px;
+        }
+
+        &__name {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        &__list {
+            display: flex;
+            align-items: center;
+
+        }
+
+        &__menu {
+            transition: 0.25s;
+
+            &:hover {
+                color: $green-light;
+            }
+        }
+
+        &__link {
+            margin-right: 28px;
+            font-weight: bold;
+            transition: 0.25s;
+
+            &:hover {
+                color: $green-light;
+            }
+        }
+
+        &__number {
+
+            &_link {
+                margin-right: 28px;
+                font-weight: bold;
+                transition: 0.25s;
+
+                &:hover {
+                    color: $green-light;
+                }
+            }
+
+        }
+
+        &__consult {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__lawyer {
+            font-size: 14px;
+        }
+
+        &__hangling {
+            display: flex;
+        }
+
+        &__social {
+            margin-right: 12px;
+            display: flex;
+
+        }
+
+        &__messager {
+            display: flex;
+            align-items: center;
+
+            &:not(:last-child) {
+                margin-right: 4px;
+            }
+
+            &_item {
+                display: flex;
+                transition: 0.1s;
+
+                &:hover {
+                    scale: 1.1;
+                }
+            }
+        }
+
+        &__number {
+            font-size: 24px;
+            line-height: normal;
+            font-weight: bold;
+        }
+
+        &__call {
+            font-size: 18px;
+            line-height: 21px;
+            color: #fff;
+            font-weight: bold;
+            padding: 14px 30px 15px;
+            background: $green;
+            border-radius: 10px;
+            box-shadow: 0px 10px 10px rgba(40, 141, 47, 0.5);
+            transition: 0.25s;
+
+            &:hover {
+                color: #fff;
+                background: $green-light;
+                box-shadow: 0px 10px 10px rgba(49, 178, 58, 0.5);
+            }
+        }
+    }
+
+    &-main {
+        background: url('../images/header-bg.webp') center center no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        padding-bottom: 82px;
+    }
+
+    &-title {
+        color: white;
+        margin-bottom: 40px;
+    }
+
+    &-compensation {
+        display: flex;
+        max-width: 786px;
+        background: white;
+        justify-content: space-between;
+        box-shadow: -500px 0px 0px 0px rgba( 255,  255,  255, 1);
+        // transform: translateY(28px);
+    }
+
+    &-bonus {
+        padding: 35px 5px 113px;
+        max-width: 446px;
+
+        &__title {
+            color: $font-color;
+            margin-bottom: 36px;
+            font-size: 40px;
+            line-height: 44px;
+            font-weight: bold;
+        }
+
+        
+        &-subtitle{
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+    &-conditions{
+        padding: 59px 40px;
+        background: $blue;
+
+        &__container{
+            display: flex;
+            &:not(:last-child){
+                margin-bottom: 20px;
+            }
+        }
+        &__item{
+            margin-right: 18px;
+        }
+        &__text{
+            font-size: 16px;
+            line-height: 28px;
+            max-width: 220px;
+
+            
+        }
+    }
+    &-perspective{
+       max-width: 787px; 
+       background: white;
+       padding: 50px 62px 50px;
+       border: 10px solid $purple;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       transform: translateY(-30px);
+       &__text{
+           max-width: 283px;
+           position: relative;
+        //    font-size: 18px;
+           line-height: 28px;
+           &::after{
+               content: url('/images/longarrow.svg');
+               position: absolute;
+               bottom: 0;
+               right: 40px;
+               transform: translate(50%, 50%);
+                max-width: 128px;
+           }
+       }
+       &__link {
+           padding: 21px 43px 23px 50px;
+           background: $green;
+           font-size: 24px;
+           line-height: 28px;
+           font-weight: bold;
+           color: white;
+           border-radius: 10px;
+           box-shadow: 0px 10px 10px rgba(40, 141, 47, 0.5);
+           transition: 0.25s;
+
+           &:hover {
+               color: #fff;
+               background: $green-light;
+               box-shadow: 0px 10px 10px rgba(49, 178, 58, 0.5);
+           }
+       }
+    }
+}
