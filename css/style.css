@@ -961,7 +961,7 @@ section {
 	transform: translate(0%, -50%);
 	max-width: 540px;
 }
-
+ 
 .yourself-block::before {
 	content: url("../images/yourself-line.svg");
 	position: absolute;
