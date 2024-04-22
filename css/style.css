@@ -912,7 +912,7 @@ section {
 }
 
 .limit-img {
-	max-width: 770px;
+	max-width: 770px; 
 	padding: 30px;
 	background: white;
 	position: absolute;
