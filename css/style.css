@@ -1575,7 +1575,7 @@ section {
 .risks-content__item {
 	display: -webkit-box;
 	display: -ms-flexbox;
-	display: flex;
+	display: flex; 
 	line-height: 32px;
 	z-index: 1;
 	position: relative;
