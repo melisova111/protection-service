@@ -1602,7 +1602,7 @@ section {
 .form-title {
 	margin-bottom: 21px;
 	max-width: 320px;
-	position: relative;
+	position: relative; 
 }
 
 .form-title::after {
