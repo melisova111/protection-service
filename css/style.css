@@ -1966,7 +1966,7 @@ section {
 
 .command .swiper-pagination-bullet {
 	margin: 0 18px;
-	width: 6px;
+	width: 6px; 
 	height: 6px;
 	border-radius: none;
 	background: #959EE1;
