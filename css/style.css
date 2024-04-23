@@ -2160,7 +2160,7 @@ section {
 
 .scheme-block__title {
 	position: relative;
-}
+} 
 
 .scheme-block__title::after {
 	content: url("../images/scheme-arrow.svg");
