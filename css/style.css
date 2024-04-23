@@ -2624,7 +2624,7 @@ section {
 .dogovor-mobile,
 .limit-img-mobile {
 	display: none;
-}
+} 
 
 @media (max-width: 575.98px) {
 	.dogovor-desktop,
