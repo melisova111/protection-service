@@ -2563,7 +2563,7 @@ section {
 .footer-list__item {
 	border-radius: 50%;
 	background: white;
-	display: -webkit-box;
+	display: -webkit-box; 
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: center;
@@ -2578,7 +2578,7 @@ section {
 	box-shadow: 0px 10px 10px rgba(40, 141, 47, 0.5);
 	margin-right: 10px;
 }
-
+ 
 .footer-list__item img {
 	width: 30px;
 }
