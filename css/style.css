@@ -1417,7 +1417,7 @@ section {
  
 .service .swiper-pagination-bullet-active {
 	position: relative;
-	opacity: 1;
+	opacity: 1; 
 }
 
 .service .swiper-pagination-bullet-active::before {
